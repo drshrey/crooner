@@ -1,8 +1,10 @@
 {
+  "homepage": "http://croonerio.github.io/",
   "name": "songwriter",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "gh-pages": "^0.11.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
@@ -10,6 +12,7 @@
     "react-dom": "^15.3.2"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

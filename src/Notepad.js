@@ -22,17 +22,15 @@ class Notepad extends Component {
     console.log(this.state.song);
     return (
         <div className="column">
-          <textarea
-            placeholder={`Come gather around people
-Wherever you roam
-And admit that the waters
-Around you have grown
-And accept it that soon
-You'll be drenched to the bone
-And if your breath to you is worth saving
-Then you better start swimming or you'll sink like a stone
-For the times they are a-changing`}
-            onChange={this.handleTextChange}/>
+          <textarea placeholder="The times they are a changing"
+                rows="20"
+                id="comment_text"
+                cols="40"
+                className="ui-autocomplete-input"
+                autoComplete="off"
+                role="textbox"
+                aria-autocomplete="list"
+                aria-haspopup="true"></textarea>
         </div>
     );
   }
